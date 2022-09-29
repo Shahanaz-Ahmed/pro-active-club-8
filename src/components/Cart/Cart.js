@@ -46,7 +46,7 @@ const Cart = (props) => {
       <div className="my-info">
         <div>
           <p>47kg</p>
-          <p>weight</p>
+          <p>Weight</p>
         </div>
         <div>
           <p>5ft</p>
