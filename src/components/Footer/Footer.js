@@ -18,7 +18,11 @@ const Footer = () => {
         <h3>Differnece between props and state?</h3>
         <p>
           Props are read only.Props can not be modified.On the other hand state
-          changes can be asynchronous.state can be modified using this.setState
+          changes can be asynchronous.state can be modified using
+          this.setState.Props allow you to pass data from one component to other
+          components as an argument.State holds information about the components
+          Props can be accessed by the child component.State cannot be accessed
+          by child components.
         </p>
       </div>
       <div>
