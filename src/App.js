@@ -4,7 +4,7 @@ import Activity from "./components/Activity/Activity";
 
 function App() {
   return (
-    <div>
+    <div className="main">
       <h1>Pro Active Club</h1>
       <Activity></Activity>
     </div>
