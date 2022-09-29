@@ -10,7 +10,7 @@ const Exercise = ({ activity, handleAddtoList }) => {
       <img src={img} alt="" />
       <div className="exercise-info">
         <h3>{name}</h3>
-        <p>Time Required: {Time_required}</p>
+        <p>Time Required: {Time_required} min</p>
       </div>
       <button onClick={() => handleAddtoList(activity)} className="btn-card">
         <p>Add to List</p>

@@ -1,9 +1,16 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = (props) => {
+  const { cart } = props;
+  console.log(cart);
+
+  let total = 0;
+  for (const product of cart) {
+    total = total + parseInt(product.Time_required);
+  }
   return (
-    <div>
+    <div className="cart">
       <h2>Shahanaz Ahmed Nishi</h2>
       <div className="my-info">
         <div>
@@ -37,7 +44,7 @@ const Cart = ({ cart }) => {
       <h2>Exercise Details</h2>
       <div>
         <div>
-          <p>Exercise Time: {cart.length}</p>
+          <p>Exercise Time: {total}</p>
         </div>
         <div>
           <p>Break Time: {cart.length}</p>

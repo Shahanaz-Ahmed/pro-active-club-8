@@ -1,3 +1,7 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
 .my-info{
     background-color: #c5c8ca;
     display: flex;
