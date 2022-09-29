@@ -1,8 +1,6 @@
 import React from "react";
 import "./Exercise.css";
 const Exercise = ({ activity, handleAddtoList }) => {
-  //console.log(props.activity);
-  //   const { activity, handleAddtoList } = props;
   const { name, Time_required, img } = activity;
 
   return (
