@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Activity from "./components/Activity/Activity";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <h1>Pro Active Club</h1>
       </div>
       <Activity></Activity>
+      <Footer></Footer>
     </div>
   );
 }
