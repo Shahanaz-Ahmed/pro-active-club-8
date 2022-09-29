@@ -12,6 +12,7 @@ const Cart = (props) => {
   return (
     <div className="cart">
       <h2>Shahanaz Ahmed Nishi</h2>
+      <p>Student</p>
       <div className="my-info">
         <div>
           <p>47kg</p>
