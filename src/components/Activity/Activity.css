@@ -9,55 +9,16 @@
     gap: 45px;
     margin: 100px 50px;
 }
-/* 
-.my-info{
-    background-color: #c5c8ca;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 20px;
-    margin-right: 20px;
-} 
-.break{
-    background-color: #c5c8ca;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-radius: 20px;
-    margin-right: 20px;
-    margin-top:50px ;
-    padding: 20px;
-}
 
-.break button{
-    border: none;
-    background-color:  #c5c8ca;
-    border-radius: 100%;
-    padding: 10px;
-}
-
-.break button:hover{
-    background-color: #186aa5;
-    border-radius: 100%;
-    padding: 10px;
-}
-
-.Activity-button{
-    width: 95%;
-    background-color: rgb(59, 59, 207);
-    color: white;
-    font-weight: bold;
-    border: none;
-    font-size: 18px;
-    border-radius:8px;
-    padding: 18px;
-    margin-right: 20px;
-} */
-
-
-@media screen and (max-width:700px) {
+@media screen and (min-width:320px) and (max-width:480px) {
     .activity-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .activity-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
