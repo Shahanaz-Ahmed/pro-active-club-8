@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div>
         <h1>Frequently Ask Question</h1>
-        <h3>how does react work?</h3>
+        <h3>How does react work?</h3>
         <p>
           ReactJS divides the UI into isolated reusable pieces of code known as
           components. React components work similarly to JavaScript functions as
@@ -15,9 +15,9 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <h3> differnece between props and state?</h3>
+        <h3>Differnece between props and state?</h3>
         <p>
-          props are read only.Props can not be modified.On the other hand state
+          Props are read only.Props can not be modified.On the other hand state
           changes can be asynchronous.state can be modified using this.setState
         </p>
       </div>

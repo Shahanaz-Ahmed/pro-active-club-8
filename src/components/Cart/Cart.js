@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cart = (props) => {
   const { cart } = props;
@@ -29,10 +31,18 @@ const Cart = (props) => {
   }, []);
   //end
 
+  const showToastMessage = () => {
+    toast.success(
+      "Congratulations You have successfully completed All activities !",
+      {
+        position: toast.POSITION.TOP_RIGHT,
+      }
+    );
+  };
+
   return (
     <div className="cart">
       <h2>Shahanaz Ahmed Nishi</h2>
-      <p>Student</p>
       <div className="my-info">
         <div>
           <p>47kg</p>
@@ -56,7 +66,7 @@ const Cart = (props) => {
           <button onClick={() => handlebreakTimeToList(20)}>20s</button>
         </div>
         <div>
-          <button onClick={() => handlebreakTimeToList(10)}>30s</button>
+          <button onClick={() => handlebreakTimeToList(30)}>30s</button>
         </div>
         <div>
           <button onClick={() => handlebreakTimeToList(40)}>40s</button>
@@ -71,7 +81,10 @@ const Cart = (props) => {
           <p>Break Time: {breaktime}</p>
         </div>
       </div>
-      <button className="Activity-button">Activity Complete</button>
+      <button onClick={showToastMessage} className="Activity-button">
+        Activity Complete
+      </button>
+      <ToastContainer />
     </div>
   );
 };
